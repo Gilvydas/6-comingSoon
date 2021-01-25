@@ -1,0 +1,187 @@
+.bg-blue {
+    background-color: #03A9f4;
+    
+}
+/* header */
+.header {
+    text-align: center;
+}
+.header > img {
+    display: inline-block;
+    height: 30px;
+    margin-bottom: 40px;
+}
+.header > h1 {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.header > p {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #555;
+}
+.header > .clock {
+margin-bottom: 30px;
+}
+.header > form {
+margin-bottom: 20px;
+}
+.header .email-input {
+    display: inline-block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    line-height: 20px;
+    background: transparent;
+    
+}
+.header > form > button {
+    color: white;
+    background-color: #EA1D62;
+    border: none;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 250px;
+    
+
+}
+.mouse {
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+    
+}
+/* main */
+.main {
+    
+    /* left-column */
+}
+ a {
+    color: #EA1D62;
+    text-decoration: none;
+}
+.left-column {
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+.left-column > h2 {
+    margin-bottom: 20px;
+}
+.left-column > p {
+    margin-bottom: 20px;
+    color: #555;
+}
+.progress {
+    display: inline-block;
+    width: 100%;
+}
+#ux-design {
+    width: 100%;
+    
+}
+#web-design {
+    width: 100%;
+    
+}
+#web-development {
+    width: 100%;
+    
+}
+/* right-column */
+.right-column {
+    display: inline-block;
+    float: right;
+    width: 40%;
+    
+    
+}
+.right-column > h2 {
+    margin-bottom: 20px;
+    
+}
+.right-column > p {
+    margin-bottom: 20px;
+    color: #555;
+}
+.right-column > form {
+    display: inline-block;
+    margin-bottom: 10px;
+    
+    
+
+}
+form > input {
+    border: none;
+    border-bottom: 1px solid gray;
+    line-height: 30px;
+}
+.name-input {
+    width: 45%;
+}
+.email-input {
+    width: 45%;
+    float: right;
+}
+.message-input {
+    width: 100%;
+    line-height: 55px;
+    margin-top: 20px;
+    
+}
+form > button {
+    float: right;
+    color: white;
+    background-color: #EA1D62;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* footer */
+
+.footer {
+    padding: 0;
+}
+.social-row {
+    
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-top: 0px;
+}
+.footer-info {
+    padding: 50px;
+    text-align: center;
+    color: #555;
+}
+.footer-info > p > span {
+    color: #F4F3F9;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .left-column {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .right-column {
+        width: 100%;
+    }
+}
