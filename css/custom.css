@@ -48,8 +48,7 @@ margin-bottom: 20px;
     background-color: #EA1D62;
     border: none;
     padding: 10px;
-    display: inline-block;
-    margin-right: 250px;
+    margin-right: calc((100% - 80px) / 2);
     
 
 }
@@ -152,10 +151,14 @@ form > button {
     padding: 0;
 }
 .social-row {
-    
+    color: white;
     text-align: center;
     border-bottom: 1px solid white;
     padding-top: 0px;
+    
+}
+.social-row .fab {
+    padding: 10px;
 }
 .footer-info {
     padding: 50px;
@@ -165,6 +168,7 @@ form > button {
 .footer-info > p > span {
     color: #F4F3F9;
 }
+
 
 
 
