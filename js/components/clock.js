@@ -1,8 +1,22 @@
-function clock(selector) {
+function clock(selector, deadline) {
+    if (typeof selector !== 'string' || selector === '') {
+        console.error('Error: netinkamo formato selektorius.')
+        return false;
+    }
+    if (typeof deadline !== 'string' || deadline === '' || !isFinite((new Date(`2000-${deadline}`)).getTime())) {
+        console.error('Error: netinkamo formato deadline reiksme.')
+        return false;
+    }
+
+
     const clockDOM = document.querySelector(selector);
+    if (!clockDOM) {
+        console.error('Error: pagal pateikta selektoriu nepavyko rasti norimo DOM elemento.')
+        return false;
+    }
     let allValuesDOM = null;
 
-    const deadline = '01-04 14:00:00';
+
     const labels = ['days', 'hours', 'minutes', 'seconds']
     let numbers = calctime(deadline);
     let HTML = '';
