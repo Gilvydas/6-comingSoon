@@ -48,8 +48,7 @@ margin-bottom: 20px;
     background-color: #EA1D62;
     border: none;
     padding: 10px;
-    display: inline-block;
-    margin-right: 250px;
+    margin-right: calc((100% - 80px) / 2);
     
 
 }
@@ -64,10 +63,15 @@ margin-bottom: 20px;
     
     /* left-column */
 }
- a {
+ .left-column  > p > a {
     color: #EA1D62;
     text-decoration: none;
 }
+.right-column  > p > a {
+    color: #EA1D62;
+    text-decoration: none;
+}
+
 .left-column {
     display: inline-block;
     float: left;
@@ -150,22 +154,67 @@ form > button {
 
 .footer {
     padding: 0;
+    color: #fff9;
+    line-height: 30px;
 }
+footer a {
+    color: #fff;
+    text-decoration: none;}
 .social-row {
-    
+    color: white;
     text-align: center;
     border-bottom: 1px solid white;
     padding-top: 0px;
+    }
+.social-row .fa {
+    width: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.social-row .fa:hover {
+    background-color: #fff;
+    color: #03a9f4;
 }
 .footer-info {
     padding: 50px;
     text-align: center;
-    color: #555;
+    
 }
-.footer-info > p > span {
-    color: #F4F3F9;
+.footer-logo {
+    height: 40px;
+    margin: 30px 0;
+}
+.footer-text{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0 20px;
+}
+.footer-text > p {
+    position: relative;
 }
 
+.footer-text > p::before {
+    display: inline-block;
+    content: '';
+    width: 2px;
+    height: 18px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: -11px;
+    transform: translateY(-50%);
+}
+.footer-text > p:first-of-type::before {
+    display: none;
+}
+footer > .short-row > p {
+    display: inline-block;
+    width: 100%;
 
 
 
@@ -176,6 +225,8 @@ form > button {
 
 
 
+
+}
 @media (max-width: 900px) {
     .left-column {
         width: 100%;
@@ -183,5 +234,13 @@ form > button {
     }
     .right-column {
         width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .footer-text {
+        flex-direction: column;
+    }
+    .footer-text > p::before {
+        display: none;
     }
 }
