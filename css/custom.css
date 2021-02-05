@@ -1,5 +1,5 @@
-.bg-blue {
-    background-color: #03A9f4;
+.bg-main {
+    background-color: var(--main-color);
     
 }
 /* header */
@@ -81,22 +81,7 @@ width: 100%;
     margin-bottom: 20px;
     color: #555;
 }
-.progress {
-    display: inline-block;
-    width: 100%;
-}
-#ux-design {
-    width: 100%;
-    
-}
-#web-design {
-    width: 100%;
-    
-}
-#web-development {
-    width: 100%;
-    
-}
+
 /* right-column */
 .right-column {
     display: inline-block;
