@@ -1,5 +1,5 @@
-.bg-blue {
-    background-color: #03A9f4;
+.bg-main {
+    background-color: var(--main-color);
     
 }
 /* header */
@@ -33,6 +33,8 @@ margin-bottom: 30px;
 }
 .header > form {
 margin-bottom: 20px;
+display: inline-block;
+width: 100%;
 }
 .header .email-input {
     display: inline-block;
@@ -52,12 +54,7 @@ margin-bottom: 20px;
     
 
 }
-.mouse {
-    margin-top: 30px;
-    display: inline-block;
-    width: 100%;
-    
-}
+
 /* main */
 .main {
     
@@ -84,22 +81,7 @@ margin-bottom: 20px;
     margin-bottom: 20px;
     color: #555;
 }
-.progress {
-    display: inline-block;
-    width: 100%;
-}
-#ux-design {
-    width: 100%;
-    
-}
-#web-design {
-    width: 100%;
-    
-}
-#web-development {
-    width: 100%;
-    
-}
+
 /* right-column */
 .right-column {
     display: inline-block;
