@@ -17,6 +17,7 @@
     outline: none;
 }
 .form > textarea {
+    padding-bottom: 65px;
     min-height: 94px;
     max-height: 262px;
 }
