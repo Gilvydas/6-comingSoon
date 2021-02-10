@@ -51,6 +51,7 @@ class Validation {
         const emailParts = email.split('@');
         const local = emailParts[0];
         const domain = emailParts[1];
+        const localPart = local.split('')
         //pries @ turi buti ne tuscias tekstas+
         if (!Validation.isNotEmtyText(local)) {
             return 'Pries @ simboli negali buti tuscia';
@@ -59,8 +60,21 @@ class Validation {
         if (!Validation.isNotEmtyText(domain)) {
             return 'Uz @ simbolio negali buti tuscia';
         }
+        //taskas lokalioje dalije negali buti pirmas arba paskutinis simbolis
+
+        // if (localPart[0].includes('.')) {
+        //     console.log(localPart.length[-1]);
+        //     return 'lokalioje dalyje taskas negali buti pirmas arba paskutinis simbolis'
+        // }
+        if (Validation.textContainsDot(localPart[0])) {
+            return 'lokalioje dalyje taskas negali buti pirmas arba paskutinis simbolis'
+        }
+        //taskas lokalioje dalie negali buti paskutinis simbolis
+
+
         return true;
     }
+
 
     static isValidText(text) {
         //negali buti tuscias+
@@ -123,6 +137,10 @@ class Validation {
         }
         return true;
 
+    }
+
+    static textContainsDot(text) {
+        return text.includes('.');
     }
 }
 export { Validation }
