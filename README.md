@@ -22,4 +22,4 @@ Design: [Coming soon](https://cdn.discordapp.com/attachments/648536139677958156/
 
 ## Authors
 
-[Rimantas](https://github.com/Gilvydas)
+[Gilvydas](https://github.com/Gilvydas)
