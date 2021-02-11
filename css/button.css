@@ -3,6 +3,7 @@
     padding: 13px 40px;
     font-size: 18px;
     line-height: 20px;
+    text-align: center;
     border-radius: 3px;
     background-color: var(--secondary-color);
     color: #fff;
@@ -15,4 +16,12 @@
 }
 .btn:focus{
     background-color: var(--main-color);
+}
+.btn.fa {
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    line-height: 36px;
 }

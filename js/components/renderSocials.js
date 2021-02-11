@@ -44,7 +44,10 @@ function renderSocials(selector, data) {
         }
 
 
-        HTML += `<a href="${socialObject.href}" target="_blank" class="fa fa-${socialObject.icon}"></a>`;
+        HTML += `<a href="${socialObject.href}"
+         target="_blank" class="fa fa-${socialObject.icon}"
+          rel="noopener noreferrer">${socialObject.icon}
+          </a>`;
     }
     //post logic validation
     if (HTML === "") {

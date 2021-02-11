@@ -2,6 +2,11 @@
     display: inline-block;
     width: 100%;
 }
+.form > label{
+    font-size: 0;
+    float: left;
+    display: inline-block;
+}
 .form > input,
 .form > textarea {
     display: inline-block;

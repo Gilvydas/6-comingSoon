@@ -1,17 +1,20 @@
 .container { 
     display: inline-block;
     width: 100%;
+    float: left;
     padding: 60px 0;
 }
 .short-row {
     display: inline-block;
     width: 600px;
+    float: left;
     margin-left: calc((100% - 600px) / 2);
     
 }
 .row {
     display: inline-block;
     width: 1000px;
+    float: left;
     margin-left: calc((100% - 1000px) / 2)
 }
 @media (max-width:1100px){
