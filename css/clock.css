@@ -2,6 +2,7 @@
     display: inline-block;
     width: 100%;
     color: #fff;
+    font-weight: bold;
 }
 .clock > .time {
     display: inline-block;
@@ -11,6 +12,7 @@
 .clock > .time .value {
     font-size: 50px;
     line-height: 50px;
+    margin-bottom: 10px;
     
     
 }

@@ -3,8 +3,18 @@
     
 }
 /* header */
+.bg-img {
+    min-height: 100vh;
+    
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+
+}
 .header {
     text-align: center;
+  ;
 }
 .header > img {
     display: inline-block;
@@ -38,11 +48,12 @@ margin-bottom: 20px;
 .header > form > input {
     color: #fff;
     border-bottom-color: #fff;
+    margin-top: 60px;
     
 }
 .header > form > button {
     color:#fff;
-    
+    margin-top: 75px;
 
 }
 
@@ -99,6 +110,17 @@ margin-bottom: 20px;
     padding: 0;
     color: #fff9;
     line-height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+}
+.footer > .back-to-top{
+    position: relative;
+}
+.footer > .back-to-top > .btn{
+    position: absolute;
+    top: -25px;
+    right: -30px;
+
 }
 footer a {
     color: #fff;
@@ -111,11 +133,18 @@ footer a {
     }
 .social-row .fa {
     width: 40px;
+    height: 40px;
     line-height: 40px;
-    font-size: 20px;
+    font-size: 0;
     color: #fff;
     border-radius: 50%;
     transition: all 0.5s;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.social-row > .fa::before {
+    
+    font-size: 20px;
 }
 .social-row .fa:hover {
     background-color: #fff;
@@ -124,6 +153,8 @@ footer a {
 .footer-info {
     padding: 50px;
     text-align: center;
+    
+    
     
 }
 .footer-logo {
@@ -137,6 +168,7 @@ footer a {
     justify-content: center;
     gap: 0 20px;
 }
+    
 .footer-text > p {
     position: relative;
 }
@@ -145,7 +177,7 @@ footer a {
     display: inline-block;
     content: '';
     width: 2px;
-    height: 18px;
+    height: 45px;
     background-color: #fff;
     position: absolute;
     top: 50%;
@@ -180,6 +212,9 @@ footer > .short-row > p {
     }
 }
 @media (max-width: 700px) {
+    .container > .back-to-top {
+        display: none;
+    }
     .footer-text {
         flex-direction: column;
     }
